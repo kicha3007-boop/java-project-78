@@ -1,0 +1,13 @@
+[versions]
+junit = "5.13.4"
+versions-plugin = "0.52.0"
+spotless-plugin = "7.2.1"
+
+[libraries]
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+
+[plugins]
+versions = { id = "com.github.ben-manes.versions", version.ref = "versions-plugin" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless-plugin" }
